@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kubusstore</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .search {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cart {
+            font-size: 25px;
+        }
+
+        /* TEKS BERJALAN */
+        .running-text {
+            background-color: white;
+            color: #ff5722;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* BANNER */
+        .banner {
+            margin: 20px;
+            padding: 30px;
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* KATEGORI */
+        .kategori {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .kategori button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff0eb;
+            cursor: pointer;
+        }
+
+        /* PRODUK */
+        .produk {
+            margin: 20px;
+        }
+
+        .produk-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 210px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 17px;
+        }
+
+        .harga {
+            color: #ff5722;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .terjual {
+            color: gray;
+            font-size: 13px;
+        }
+
+        .beli {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .beli:hover {
+            background-color: #e64a19;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="logo">
+            KubusStore
+        </div>
+
+        <input
+            type="text"
+            class="search"
+            placeholder="Cari produk elektronik..."
+        >
+
+        <div class="cart">
+            🛒
+        </div>
+
+    </div>
+
+
+    <!-- TEKS BERJALAN -->
+    <div class="running-text">
+
+        <marquee>
+            WELCOME TO KUBUS STORE
+        </marquee>
+
+    </div>
+
+
+    <!-- BANNER -->
+    <div class="banner">
+
+        <h1>SELAMAT DATANG DI KUBUS STORE</h1>
+
+        <p>
+            Tempat belanja elektronik murah dan terpercaya
+        </p>
+
+    </div>
+
+    <!-- PRODUK -->
+    <div class="produk">
+
+        <h2>Produk Terlaris</h2>
+
+        <div class="produk-container">
+
+
+            <!-- PRODUK 1 -->
+            <div class="card">
+
+                <img
+                    src="prosesor.jpg"
+                    alt="AMD Ryzen 7 8000 series"
+                >
+
+                <h3>AMD Ryzen 7 8000 series</h3>
+
+                <p class="harga">
+                    Rp2.700.000
+                </p>
+
+                <p class="terjual">
+                    ⭐ 4.8 | 120 terjual
+                </p>
+
+                <button class="beli">
+                    Beli Sekarang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="card">
+
+                <img
+                    src="rtx.jpg"
+                    alt="vga"
+                >
+
+                <h3>RTX 4090</h3>
+
+                <p class="harga">
+                    Rp28.500.000
+                </p>
+
+                <p class="terjual">
+                    ⭐ 4.9 | 85 terjual
+                </p>
+
+                <button class="beli">
+                    Beli Sekarang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="card">
+
+                <img
+                    src="tangzu.jpg"
+                    alt="Headset"
+                >
+
+                <h3>Tangzu WANER</h3>
+
+                <p class="harga">
+                    Rp311.000
+                </p>
+
+                <p class="terjual">
+                    ⭐ 4.7 | 250 terjual
+                </p>
+
+                <button class="beli">
+                    Beli Sekarang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 4 -->
+            <div class="card">
+
+                <img
+                    src="keyboard.jpg"
+                    alt="Keyboard"
+                >
+
+                <h3>Keyboard AULA F75</h3>
+
+                <p class="harga">
+                    Rp725.000
+                </p>
+
+                <p class="terjual">
+                    ⭐ 4.8 | 175 terjual
+                </p>
+
+                <button class="beli">
+                    Beli Sekarang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 5 -->
+            <div class="card">
+
+                <img
+                    src="mouse.jpg"
+                    alt="Mouse"
+                >
+
+                <h3>Mouse Ajazz aj099</h3>
+
+                <p class="harga">
+                    Rp215.000
+                </p>
+
+                <p class="terjual">
+                    ⭐ 4.8 | 200 terjual
+                </p>
+
+                <button class="beli">
+                    Beli Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 KubusStore
+        </p>
+
+        <p>
+            Toko Elektronik Online
+        </p>
+
+    </footer>
+
+</body>
+</html>
